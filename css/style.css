@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #ededf1;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #5a5a5a;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font: normal 1.5em/190% 'Raleway', sans-serif;
+  letter-spacing: -.03em;
+}
+
+h1::-moz-selection, h1::-moz-selection, h2::-moz-selection, h2::-moz-selection, h3::-moz-selection, h3::-moz-selection, p::-moz-selection, p::-moz-selection {
+  background-color: #eeedef;
+  color: #000;
+}
+
+h1::selection, h1::-moz-selection, h2::selection, h2::-moz-selection, h3::selection, h3::-moz-selection, p::selection, p::-moz-selection {
+  background-color: #eeedef;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  background: #bbb;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: radial-gradient(#fdfbfb 0%, #ebedee 100%);
+  /*background: #fff url('img/bg-diegotenorio.svg') center center no-repeat; */
+  background-size: cover;
+  /* Full height */
+  height: 99.9%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+footer #contato {
+  background-color: #fff;
+}
+
+footer #url {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+footer #url p {
+  font: normal .68em 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#logo {
+  background-image: url("../assets/img/sign-black.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: background-position .2s ease;
+  transition: background-position .2s ease;
+}
+
+#logo p {
+  font: normal .7em 'Open Sans';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 3.5rem 0 0 -1.5rem;
+  letter-spacing: .08em;
+  color: #acb5b9;
+  /* IE 9 */
+  -webkit-transform: rotate(-17.5deg);
+  /* Safari 3-8 */
+  transform: rotate(-17.5deg);
+  opacity: 0;
+}
+
+#background-img {
+  background-image: url("../assets/img/bg-diegotenorio.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+}
+
+#portfolio figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+}
+
+#portfolio figure figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(72, 76, 97, 0)), color-stop(75%, rgba(72, 76, 97, 0.2)));
+  background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.2) 75%);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+          transform: translate3d(0, 50%, 0);
+}
+
+#portfolio figure h2 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #484c61;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  opacity: 0;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0);
+  font: normal 2.8em/190% 'Raleway', sans-serif;
+}
+
+#portfolio figure:hover h2 {
+  color: #fff;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+          transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  opacity: 1;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+#portfolio figure figcaption::before {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+#portfolio figure:hover figcaption::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  #logo {
+    background-size: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  #logo {
+    background-size: 80%;
+  }
+}
+
+#sobre {
+  background-color: #fff;
+  position: relative;
+}
+
+#sobre #baixar-curriculo {
+  color: #333;
+  font: normal 1.4em/200% 'Raleway', sans-serif;
+  letter-spacing: -.03em;
+  display: block;
+  height: 11.5rem;
+  padding-top: 4.5rem;
+  background-color: #dddee1;
+  -webkit-transition: ease background-color 0.7s;
+  transition: ease background-color 0.7s;
+}
+
+#sobre #baixar-curriculo img {
+  margin: -.7rem 1.9rem 0 0;
+  width: auto;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@media (min-width: 768px) {
+  #descri {
+    height: 11.5rem;
+    padding: 3rem 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #descri {
+    height: auto;
+    padding: 3rem 0 2rem 0;
+  }
+}
+
+#sobre #baixar-curriculo:hover {
+  background-color: #f8f6f8;
+  -webkit-transition: ease background-color 0.7s;
+  transition: ease background-color 0.7s;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefefe;
+  z-index: 99999;
+  height: 100%;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../assets/img/loading.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
+#behance {
+  background: #fff url("../assets/img/behance.svg") center center no-repeat;
+}
+
+#email {
+  background: #fff url("../assets/img/email.svg") center center no-repeat;
+}
+
+#whatsapp {
+  background: #fff url("../assets/img/whatsapp.svg") center center no-repeat;
+}
+
+#behance, #email, #whatsapp {
+  height: 90px;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+#behance:hover, #email:hover, #whatsapp:hover {
+  background-color: #eee;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+/* parallax */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  size: 100% 100vh;
+  position: fixed, 0px null null 0px;
+}
+
+.box {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  size: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background: #ff8330;
+  will-change: transform;
+}
+/*# sourceMappingURL=style.css.map */
