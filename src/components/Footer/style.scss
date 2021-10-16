@@ -20,26 +20,16 @@
             a {
                 height: 90px;
                 width: 100px;
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: background-color 0.3s ease-out;
     
                 &:hover {
                     background-color: #eee;
                     transition: background-color 0.3s ease-out;
                 }
-            }
-            
-            .icon-github {
-                background: #fff url(../../assets/img/github.svg) center center no-repeat;
-            }
-            
-            .icon-linkedin {
-                background: #fff url(../../assets/img/linkedin.svg) center center no-repeat;
-            }
-            
-            .icon-figma {
-                background: #fff url(../../assets/img/figma.svg) center center no-repeat;
-            }  
+            } 
         }      
     }
 

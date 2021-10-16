@@ -1,10 +1,10 @@
 import React from "react";
 
 import Abudhabi from '../../assets/img/portfolio/abudhabi2.jpg';
-import MMA from '../../assets/img/portfolio/mmamericas.jpg';
+import HealthTrack from '../../assets/img/portfolio/healthtrack.jpg';
 import BVR from '../../assets/img/portfolio/bvr.jpg';
 import Mangue3 from '../../assets/img/portfolio/mangue3.jpg';
-import SSCE from '../../assets/img/portfolio/ssce.jpg';
+import DigitalStorm from '../../assets/img/portfolio/digital-storm.jpg';
 import KenMasters from '../../assets/img/portfolio/ken.jpg';
 import FoodStalker from '../../assets/img/portfolio/foodstalker.png';
 import InterApp from '../../assets/img/portfolio/interapp.png';
@@ -25,9 +25,9 @@ const Gallery = () => (
             <a
                 target="_blank"
                 rel="noreferrer"
-                href=""
+                href="https://www.behance.net/gallery/95780169/Logofolio"
             >
-                <img src={BVR} alt="BVR" />
+                <img src={Mangue3} alt="Mangue3" />
             </a>
             <a
                 target="_blank"
@@ -41,16 +41,16 @@ const Gallery = () => (
             <a
                 target="_blank"
                 rel="noreferrer"
-                href=""
+                href="https://www.figma.com/file/5K9qtSdrwQrcjH8LY1Bw9d/Health-Track?node-id=112%3A320"
             >
-                <img src={MMA} alt="MMA" />
+                <img src={HealthTrack} alt="HealthTrack" />
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.behance.net/gallery/95780169/Logofolio"
+                href="https://www.behance.net/gallery/52429831/BVR"
             >
-                <img src={Mangue3} alt="Mangue3" />
+                <img src={BVR} alt="BVR" />
             </a>
             <a
                 target="_blank"
@@ -64,14 +64,14 @@ const Gallery = () => (
             <a
                 target="_blank"
                 rel="noreferrer"
-                href=""
+                href="https://www.behance.net/gallery/95780169/Logofolio"
             >
-                <img src={SSCE} alt="SSCE" />
+                <img src={DigitalStorm} alt="Digital Storm" />
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
-                href=""
+                href="https://www.behance.net/gallery/51436913/InterApp"
             >
                 <img src={InterApp} alt="InterApp" />
             </a>

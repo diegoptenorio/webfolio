@@ -1,5 +1,9 @@
 import React from 'react';
 
+import IconGithub from '../../assets/img/github.svg';
+import IconLinkedIn from '../../assets/img/linkedin.svg';
+import IconFigma from '../../assets/img/figma.svg';
+
 import './style.scss';
 
 const Footer = () => (
@@ -13,7 +17,9 @@ const Footer = () => (
                         target="_blank"
                         rel="noreferrer"
                         href="https://github.com/diegoptenorio"
-                    ></a>
+                    >
+                        <img src={IconGithub} alt="Github" />
+                    </a>
                 </li>
                 <li>
                     <a
@@ -21,7 +27,9 @@ const Footer = () => (
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.linkedin.com/in/diegotenorio"
-                    ></a>
+                    >
+                        <img src={IconLinkedIn} alt="LinkedIn" />
+                    </a>
                 </li>
                 <li>
                     <a
@@ -29,12 +37,14 @@ const Footer = () => (
                         target="_blank"
                         rel="noreferrer"
                         href="https://www.figma.com/@diegotenorio"
-                    ></a>
+                    >
+                        <img src={IconFigma} alt="Figma" />
+                    </a>
                 </li>
             </ul>
         </div>
         <div className="address">
-            diegotenorio.com
+            diegotenorio.com.br
         </div>
     </div>
 );
