@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .gallery-column {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            max-width: 33.333333%;
+        }
+
+        a {
+            margin-bottom: -4px;
+
+            img {
+                object-fit: contain;
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

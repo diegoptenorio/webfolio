@@ -22,7 +22,14 @@ h1 {
     letter-spacing: -.03em;
 }
 
-h1::selection, h1::-moz-selection, h2::selection, h2::-moz-selection, h3::selection, h3::-moz-selection, p::selection, p::-moz-selection {
+h1::selection,
+h1::-moz-selection,
+h2::selection,
+h2::-moz-selection,
+h3::selection,
+h3::-moz-selection,
+p::selection,
+p::-moz-selection {
     background-color: #eeedef;
     color: #000;
 }
@@ -31,7 +38,11 @@ p {
     margin: 0;
 }
 
-a, a:hover, a:focus, a:active, a:visited {
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
     text-decoration: none;
 }
 
@@ -50,4 +61,16 @@ a, a:hover, a:focus, a:active, a:visited {
     border: 0px solid #ddd;
     border-radius: 4px;
     background: #bbb;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.text-center {
+    text-align: center!important;
 }
