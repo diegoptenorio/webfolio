@@ -20,21 +20,30 @@ const Gallery = () => (
                 rel="noreferrer"
                 href="https://github.com/diegoptenorio/foodstalker"
             >
-                <img src={FoodStalker} alt="FoodStalker" />
+                <figure>
+                    <figcaption>FoodStalker</figcaption>
+                    <img src={FoodStalker} alt="FoodStalker" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/95780169/Logofolio"
             >
-                <img src={Mangue3} alt="Mangue3" />
+                <figure>
+                    <figcaption>Mangue3</figcaption>
+                    <img src={Mangue3} alt="Mangue3" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/95780169/Logofolio"
             >
-                <img src={Abudhabi} alt="Abudhabi" />
+                <figure>
+                    <figcaption>Abudhabi</figcaption>
+                    <img src={Abudhabi} alt="Abudhabi" />
+                </figure>
             </a>
         </div>
         <div className="gallery-column">
@@ -43,21 +52,30 @@ const Gallery = () => (
                 rel="noreferrer"
                 href="https://www.figma.com/file/5K9qtSdrwQrcjH8LY1Bw9d/Health-Track?node-id=112%3A320"
             >
-                <img src={HealthTrack} alt="HealthTrack" />
+                <figure>
+                    <figcaption>HealthTrack</figcaption>
+                    <img src={HealthTrack} alt="HealthTrack" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/52429831/BVR"
             >
-                <img src={BVR} alt="BVR" />
+                <figure>
+                    <figcaption>BVR</figcaption>
+                    <img src={BVR} alt="BVR" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/23476419/Illustration"
             >
-                <img src={KenMasters} alt="KenMasters" />
+                <figure>
+                    <figcaption>Ken Masters</figcaption>
+                    <img src={KenMasters} alt="KenMasters" />
+                </figure>
             </a>
         </div>
         <div className="gallery-column">
@@ -66,21 +84,30 @@ const Gallery = () => (
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/95780169/Logofolio"
             >
-                <img src={DigitalStorm} alt="Digital Storm" />
+                <figure>
+                    <figcaption>Digital Storm</figcaption>
+                    <img src={DigitalStorm} alt="Digital Storm" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/51436913/InterApp"
             >
-                <img src={InterApp} alt="InterApp" />
+                <figure>
+                    <figcaption>InterApp</figcaption>
+                    <img src={InterApp} alt="InterApp" />
+                </figure>
             </a>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.behance.net/gallery/51438627/3D"
             >
-                <img src={Chess3D} alt="Chess 3D" />
+                <figure>
+                    <figcaption>Chess 3D</figcaption>
+                    <img src={Chess3D} alt="Chess 3D" />
+                </figure>
             </a>
         </div>
     </div>

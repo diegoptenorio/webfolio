@@ -11,6 +11,9 @@
     @media (min-width: 768px) {
         flex-direction: row;
     }
+    @media (max-width: 299px) {
+        margin-top: -18px;
+    }
     
     .description {
         min-height: 185px;
@@ -27,6 +30,12 @@
         h1 {
             width: 100%;
             margin: 0;
+            @media (max-width: 991px) {
+                font: normal 1.3em/190% 'Raleway', sans-serif;
+            }
+            @media (max-width: 575px) {
+                font: normal 1.1em/190% 'Raleway', sans-serif;
+            }
         }
     }
 
