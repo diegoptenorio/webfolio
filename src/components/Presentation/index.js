@@ -7,7 +7,7 @@ import './style.scss';
 const Presentation = () => (
     <div className="container no-padding">
         <div className="description text-center">
-            <h1>Sou <strong>designer de produto</strong> e <strong>programador front-end</strong>
+            <h1>Sou <strong>designer de produto</strong> e <br className="mobile-hidden" /><strong>programador front-end</strong>
             <br />
             Planejo e desenvolvo <strong>interfaces</strong></h1>
         </div>
